@@ -24,7 +24,7 @@ app.use('/tracks', trackRoute);
  * Connect Mongo Driver to MongoDB.
  */
 let db;
-MongoClient.connect('mongodb://localhost/trackDB', (err, database) => {
+MongoClient.connect('mongodb://trackDB:Prim_407@ds141320.mlab.com:41320/heroku_z2t4qp40', (err, database) => {
   if (err) {
     console.log('MongoDB Connection Error. Please make sure that MongoDB is running.');
     process.exit(1);
